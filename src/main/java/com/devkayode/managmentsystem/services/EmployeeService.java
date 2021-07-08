@@ -11,7 +11,7 @@ import com.devkayode.managmentsystem.dtos.Response;
 public interface EmployeeService {
 
     Response createEmployee(EmployeeDTO employee);
-    Response updateEmployee(EmployeeDTO employee);
+    Response updateEmployee(Long id, EmployeeDTO employee);
     Response findEmployee(Long id);
     Response getAllEmployees();
     Response deleteEmployee(Long id);
